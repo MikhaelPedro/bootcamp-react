@@ -48,7 +48,8 @@ function Title(props){
           styleSheet={{
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             backgroundColor: appConfig.theme.colors.primary[500],
-            backgroundImage: 'url(https://virtualbackgrounds.site/wp-content/uploads/2020/08/the-matrix-digital-rain.jpg)',
+            backgroundImage: 'url(https://i.pinimg.com/originals/59/69/84/59698460a33a71e42ddf46e185e17737.gif)',
+            //backgroundImage: 'url(https://virtualbackgrounds.site/wp-content/uploads/2020/08/the-matrix-digital-rain.jpg)',
             backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
           }}
         >
@@ -64,7 +65,7 @@ function Title(props){
               width: '100%', maxWidth: '700px',
               borderRadius: '5px', padding: '32px', margin: '16px',
               boxShadow: '0 2px 10px 0 rgb(0 0 0 / 20%)',
-              backgroundColor: appConfig.theme.colors.neutrals[700],
+              backgroundColor: appConfig.theme.colors.primary[800],
             }}
           >
             {/* Formulário */}
@@ -82,7 +83,7 @@ function Title(props){
               }}
             >
               <Title tag="h2">Boas vindas de volta!</Title>
-              <Text variant="body3" styleSheet={{ marginBottom: '32px', color: appConfig.theme.colors.neutrals[300] }}>
+              <Text variant="body3" styleSheet={{ marginBottom: '32px', color: appConfig.theme.colors.neutrals[100] }}>
                 {appConfig.name}
               </Text>
               
@@ -111,10 +112,10 @@ function Title(props){
                 fullWidth
                 textFieldColors={{
                   neutral: {
-                    textColor: appConfig.theme.colors.neutrals[200],
+                    textColor: appConfig.theme.colors.neutrals[100],
                     mainColor: appConfig.theme.colors.neutrals[900],
-                    mainColorHighlight: appConfig.theme.colors.primary[500],
-                    backgroundColor: appConfig.theme.colors.neutrals[800],
+                    mainColorHighlight: appConfig.theme.colors.primary[700],
+                    backgroundColor: appConfig.theme.colors.neutrals[900],
                   },
                 }}
               />
@@ -123,8 +124,8 @@ function Title(props){
                 label='Entrar'
                 fullWidth
                 buttonColors={{
-                  contrastColor: appConfig.theme.colors.neutrals["000"],
-                  mainColor: appConfig.theme.colors.primary[500],
+                  contrastColor: appConfig.theme.colors.neutrals["800"],
+                  mainColor: appConfig.theme.colors.primary["700"],
                   mainColorLight: appConfig.theme.colors.primary[400],
                   mainColorStrong: appConfig.theme.colors.primary[600],
                 }}
@@ -141,7 +142,7 @@ function Title(props){
                 alignItems: 'center',
                 maxWidth: '200px',
                 padding: '16px',
-                backgroundColor: appConfig.theme.colors.neutrals[800],
+                backgroundColor: appConfig.theme.colors.neutrals[900],
                 border: '1px solid',
                 borderColor: appConfig.theme.colors.neutrals[999],
                 borderRadius: '10px',
@@ -159,7 +160,7 @@ function Title(props){
               <Text
                 variant="body4"
                 styleSheet={{
-                  color: appConfig.theme.colors.neutrals[200],
+                  color: appConfig.theme.colors.neutrals[100],
                   backgroundColor: appConfig.theme.colors.neutrals[900],
                   padding: '3px 10px',
                   borderRadius: '1000px'
