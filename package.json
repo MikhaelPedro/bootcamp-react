@@ -15,5 +15,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
-  }
+  },
+  "repository": "https://github.com/MikhaelPedro/bootcamp-react.git",
+  "author": "Mikhael Pedro <mikhaelpedro2000@gmail.com>"
 }
