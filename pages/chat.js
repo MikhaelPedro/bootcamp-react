@@ -83,7 +83,8 @@ export default function ChatPage() {
       styleSheet={{
         display: 'flex', alignItems: 'center', justifyContent: 'center',
         backgroundColor: appConfig.theme.colors.primary[500],
-        backgroundImage: `url(https://virtualbackgrounds.site/wp-content/uploads/2020/08/the-matrix-digital-rain.jpg)`,
+        backgroundImage: 'url(https://i.pinimg.com/originals/59/69/84/59698460a33a71e42ddf46e185e17737.gif)',
+        // backgroundImage: `url(https://virtualbackgrounds.site/wp-content/uploads/2020/08/the-matrix-digital-rain.jpg)`,
         backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
         color: appConfig.theme.colors.neutrals['000']
       }}
@@ -95,7 +96,7 @@ export default function ChatPage() {
           flex: 1,
           boxShadow: '0 2px 10px 0 rgb(0 0 0 / 20%)',
           borderRadius: '5px',
-          backgroundColor: appConfig.theme.colors.neutrals[700],
+          backgroundColor: appConfig.theme.colors.neutrals[999],
           height: '100%',
           maxWidth: '95%',
           maxHeight: '95vh',
@@ -109,7 +110,7 @@ export default function ChatPage() {
             display: 'flex',
             flex: 1,
             height: '80%',
-            backgroundColor: appConfig.theme.colors.neutrals[600],
+            backgroundColor: appConfig.theme.colors.neutrals[900],
             flexDirection: 'column',
             borderRadius: '5px',
             padding: '16px',
@@ -177,7 +178,7 @@ function Header() {
         </Text>
         <Button
           variant='tertiary'
-          colorVariant='neutral'
+          colorVariant='accent'
           label='Logout'
           href="/"
         />
@@ -197,7 +198,7 @@ function MessageList(props) {
         display: 'flex',
         flexDirection: 'column-reverse',
         flex: 1,
-        color: appConfig.theme.colors.neutrals["000"],
+        color: appConfig.theme.colors.neutrals["100"],
         marginBottom: '16px',
       }}
     >
@@ -211,7 +212,7 @@ function MessageList(props) {
               padding: '6px',
               marginBottom: '12px',
               hover: {
-                backgroundColor: appConfig.theme.colors.neutrals[700],
+                backgroundColor: appConfig.theme.colors.neutrals[900],
               }
             }}
           >
@@ -237,7 +238,7 @@ function MessageList(props) {
                 styleSheet={{
                   fontSize: '10px',
                   marginLeft: '8px',
-                  color: appConfig.theme.colors.neutrals[300],
+                  color: appConfig.theme.colors.neutrals[100],
                 }}
                 tag="span"
               >
