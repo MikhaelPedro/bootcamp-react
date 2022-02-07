@@ -27,7 +27,7 @@ function GlobalStyle(){
     );
   }
 export default function MyAPP({ Component, pageProps}) {
-    console.log('Roda em todas as páginas!');
+    //console.log('Roda em todas as páginas!');
     return (
       <>
         <GlobalStyle />
