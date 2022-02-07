@@ -124,7 +124,7 @@ function Title(props){
                 label='Entrar'
                 fullWidth
                 buttonColors={{
-                  contrastColor: appConfig.theme.colors.neutrals["800"],
+                  contrastColor: appConfig.theme.colors.neutrals["100"],
                   mainColor: appConfig.theme.colors.primary["700"],
                   mainColorLight: appConfig.theme.colors.primary[400],
                   mainColorStrong: appConfig.theme.colors.primary[600],

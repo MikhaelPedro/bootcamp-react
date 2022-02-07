@@ -96,7 +96,7 @@ export default function ChatPage() {
           flex: 1,
           boxShadow: '0 2px 10px 0 rgb(0 0 0 / 20%)',
           borderRadius: '5px',
-          backgroundColor: appConfig.theme.colors.neutrals[999],
+          backgroundColor: appConfig.theme.colors.primary[500],
           height: '100%',
           maxWidth: '95%',
           maxHeight: '95vh',
