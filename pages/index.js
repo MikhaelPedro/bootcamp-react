@@ -39,7 +39,7 @@ function Title(props){
 
   export default function PaginaInicial() {
     //const username = 'mikhaelpedro';
-    const [username, setUserName] = React.useState('MikhaelPedro');
+    const [username, setUserName] = React.useState('');
     const roteamento = useRouter();
 
     return (
@@ -157,6 +157,25 @@ function Title(props){
                 }}
                 src={`https://github.com/${username}.png`}
               />
+              <CustomBtn
+                  onClick={() => {
+                    if (mensagem.de === userName) {
+                      superbase
+                        .from("mensagens")
+                        .delete([mensagem])
+                        .match({ id: `${mensagem.id}` })
+                        .then(() => {});
+
+                      escutaMensagemDeletada((mensagem) => {
+                        console.log(mensagem.id);
+                        handleDeleteMensagem(mensagem.id);
+                      });
+                    } else {
+                      alert("Calma jogador que esse chute não é seu!");
+                    }
+                  }}
+                >
+                </CustomBtn>
               <Text
                 variant="body4"
                 styleSheet={{
